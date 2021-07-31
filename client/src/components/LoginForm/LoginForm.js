@@ -47,29 +47,19 @@ class LoginForm extends React.Component {
             validationSchema={Schems.LoginSchem}
           >
             <Form>
-              <FormInput
-                classes={formInputClasses}
-                name="email"
-                type="text"
-                label="Email Address"
-              />
-              <FormInput
-                classes={formInputClasses}
-                name="password"
-                type="password"
-                label="Password"
-              />
-              <button
-                type="submit"
-                disabled={submitting}
-                className={styles.submitContainer}
-              >
+              <FormInput classes={formInputClasses} name="email" type="text" label="Email Address"/>
+              <FormInput classes={formInputClasses} name="password" type="password" label="Password"/>
+              <button type="submit" disabled={submitting} className={styles.submitContainer}>
                 <span className={styles.inscription}>
                   {isFetching
                     ? 'Submitting...'
                     : 'LOGIN'}
                 </span>
               </button>
+              <button>
+                <a>
+                Sign in with Google
+              </a></button>
             </Form>
           </Formik>
         </div>

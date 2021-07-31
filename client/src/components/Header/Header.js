@@ -81,14 +81,13 @@ class Header extends React.Component {
       }
       return (
         <div className={styles.headerContainer}>
-          <div className={styles.fixedHeader}>
-            <span className={styles.info}>Squadhelp recognized as one of the Most Innovative Companies by Inc Magazine.</span>
-            <a href="http://www.google.com">Read Announcement</a>
-          </div>
+
             <div className={styles.loginSignnUpHeaders}>
                 <div className={styles.numberContainer}>
-                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
-                    <a href={"tel:(877)355-3585"}><span>{CONSTANTS.CONTACT_US.PHONE}</span></a>
+                    <a href={`tel:${CONSTANTS.CONTACT_US.PHONE}`} className={styles.call_us}>
+                        <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
+                        &nbsp;{CONSTANTS.CONTACT_US.PHONE}
+                    </a>
                 </div>
             <div className={styles.userButtonsContainer}>
               {this.renderLoginButtons()}
