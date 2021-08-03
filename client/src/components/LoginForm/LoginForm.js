@@ -56,10 +56,9 @@ class LoginForm extends React.Component {
                     : 'LOGIN'}
                 </span>
               </button>
-              <button>
-                <a>
-                Sign in with Google
-              </a></button>
+              <button type="button" className={styles.googleButton}>
+                <a target="_blank" href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fwww.squadhelp.com%2Flogin.php&amp;client_id=78274772730-f62839c388e8b785mhfh211vr4ueva08.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;access_type=offline&amp;approval_prompt=auto">Sign in with Google</a>
+              </button>
             </Form>
           </Formik>
         </div>
